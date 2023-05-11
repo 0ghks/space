@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -57,14 +58,14 @@
 		
 		a { 
 			text-decoration: none; 
-			color: white;
+			color: #d5d5d5;
 		}
 		
 		.container {
 			font-family: ISOCT;
 			font-size: 100px;
 			font-weight: normal;
-			color: white;
+			color: #D5D5D5;
 			display: grid;
 			place-items: center;
 			height: calc(100vh - 50px); /* 메뉴바의 높이만큼 빼준 값으로 height 속성을 설정 */
@@ -74,8 +75,27 @@
 @keyframes fade {
   to {
     opacity: 1;
+	}
 		}
+	
+	@media screen and (max-width: 400px) 
+		{
+			
+					ul { 
 
+			font-size: 15px;
+			margin-top: 30px;
+			margin-left: 20px;
+		    margin-right:40px;
+		}
+					.container {
+			font-size: 40px;
+			color: #D5D5D5;
+			display: grid;
+			place-items: center;
+			height: calc(100vh - 50px); /* 메뉴바의 높이만큼 빼준 값으로 height 속성을 설정 */
+            	opacity: 0;
+			}
 }
 	</style>
 </head>
