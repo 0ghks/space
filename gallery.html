@@ -1,45 +1,65 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>gallery</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
 	<style>
-						@font-face {
+				@font-face {
 			font-family: 'ISOCT';
 			src: url('isoct___.ttf') format('truetype');
-			font-weight:  normal;
+			font-weight: normal;
 			font-style: normal;
 		}
 		
-		body{		
-			height: 100vh;
-			background-image: url("1.jpg");
-			background-repeat: no-repeat;
-			background-size: cover; 
-			background-position: center;
-			
+						@font-face {
+			font-family: '더잠실';
+			src: url('The Jamsil 1 Thin.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
 		}
-		
-				.menu {
-			position: fixed; /* 메뉴바를 고정시키기 위해 position 속성을 fixed로 설정 */
+
+		body{color:#d5d5d5;
+			background-attachment: fixed;
+			background-image: url(55.png);
+		     background-repeat: no-repeat;
+			background-size: cover;
+		    height: 100vh;}
 			
-			width: 100%; /* 메뉴바가 화면의 가로폭을 100% 차지하도록 width 속성을 설정 */
-			color: #fff; /* 글자색을 설정 */
-		}
-		
-		ul { 
+header{
+	margin-top: 10px;
+	height: 100px;
+
+	}
+
+			h1{position: fixed; /* 메뉴바를 고정시키기 위해 position 속성을 fixed로 설정 */
+			width: 300px;
+			padding-left: 50px;
+				margin-right: 20px;
+
+				font-family: ISOCT;
+				display: inline;
+				font-weight: bold;
+				}
+
+            h1 a:hover{color:#7A7A7A}
+
+			ul {position: fixed; /* 메뉴바를 고정시키기 위해 position 속성을 fixed로 설정 */
+			width: 2000px;
+padding-top: 20px;
+
+				display: inline;
 			list-style: none;
-			font-family: ISOCT;
+			font-family: 더잠실;
 			font-size: 20px;
-			font-weight: bold;
+			font-weight: normal;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			margin-top: 30px;
-			margin-left: 0px;
-		    margin-right:20px;
+            margin-left: 400px; 
 		}
-		.main{font-size:30px;}
+		
 		li a:hover {
 			color: #7A7A7A;     
 			display:inline;
@@ -47,23 +67,44 @@
 		
 		a { 
 			text-decoration: none; 
-			color: white;
+			color: #d5d5d5;
 		}
-		
-			
+div{}
+
 	</style>
 </head>
-
 <body>
-		<div class="menu">
+	<header>
 
-		<ul>
-			<li class="main"><a href="index.html">COSMOS</a></li> 
-			<li><a href="about.html">About</a></li> 
-			<li><a href="planets.html">Planets</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="news.html">News</a></li>
-		</ul>
-	</div>
+		<h1>
+			<a href="index.html">COSMOS</a>
+		</h1>
+
+<ul>
+	<li><a href="about.html">소개</a></li> 
+	<li><a href="planets.html">플래닛</a></li>
+	<li><a href="gallery.html">갤러리</a></li>
+	<li><a href="news.html">뉴스</a></li>
+</ul>
+	</header>
+	<div>
+	<img src="01.png"width="500" height="494">
+	<img src="02.png"width="500" height="355">
+	<img src="03.png"width="500" height="326">
+	<img src="04.png"width="500" height="464">
+	<img src="05.png"width="500" height="758">
+	<img src="06.png"width="500" height="320">
+	<img src="07.png"width="500" height="500">
+	<img src="08.png"width="500" height="424">
+	<img src="09.png"width="500" height="762">
+	<img src="10.png"width="500" height="537">
+	<img src="11.png"width="500" height="762">
+	<img src="12.png"width="500" height="500">
+	<img src="13.png"width="500" height="500">
+	<img src="14.png"width="500" height="758">
+	<img src="15.png"width="500" height="500">
+	<img src="16.png"width="500" height="325">
+	<img src="17.png"width="500" height="329">
+</div>
 </body>
 </html>
