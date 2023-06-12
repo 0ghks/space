@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>Document</title>
+<meta charset="utf-8">
+<title>Untitled Document</title>
 	<style>
+
 @font-face {
 			font-family: '이탈리';
 			src: url('italicc_.ttf') format('truetype');
@@ -80,7 +78,7 @@
 
 		*{margin: 0;
 		padding: 0;}
-//body{background-color: #7A7A7A;}
+
 body{color:#dcdcef;
 			background-attachment: fixed;
 			background-image: url(55.png);
@@ -154,21 +152,49 @@ float: right;
   height: auto; /* 가로 세로 비율 유지 */
 }
 
-footer img {display: block; margin: 0px auto;
-  width: 50%;
-height: auto;
+footer {position: fixed;
+	margin-top: 15%;
+  width: 100%;
+  float: left;
+ 
+  padding-left: 25%;
 }
 
-span {margin-top: 100px;}
 
 
+
+
+
+.n1 img{
+	float: left; 
+	width: 13%;
+margin: 2%;}
+
+.n2 img{float: left;
+ 	width: 13%;
+height: 13%;
+margin: 2%;}
+
+.n3 img{float: left;  	width: 13%;
+	margin: 2%;}
+
+.n4 img{float: left;  
+	clear: both;
+	width: 13%;
+	margin: 2%;}
+
+.n5 img{float: left;  width: 13%;
+	margin: 2%;}
+
+.n6 img{float: left;  width: 13%;
+	margin: 2%;}
 
 @media screen and (max-width:768px){
-	//body{background-image: url(66.png);}
+	body{background-image: url(66.png);}
 
 	.menu {text-align: center;
 		background-color:rgba(91, 91, 137, 0.5);
-		
+
     display: none; /* 작은 화면에서는 메뉴 아이템 숨김 */
     width: 70%; /* 메뉴 너비 조정 */
   }
@@ -192,26 +218,53 @@ span {margin-top: 100px;}
 }
 
 
-
-
-
-
 .menu li {
   display: block;
   padding: 10px 20px; /* 좀 더 작은 패딩 값으로 조정 */
 }
 
- footer img {width: 60%;
 
 
-  height: auto;
+
+footer{position:static;
+	margin-top: 25%;
+padding-left: 1%;}
+
+.n1 img{
+	float: left; 
+	width: 80%;
+margin: 10%;}
+
+.n2 img{float: left;
+	clear: both;
+ 	width: 80%;
+
+margin: 10%;}
+
+.n3 img{float: left;
+	clear: both;  	width: 80%;
+	margin: 10%;}
+
+.n4 img{float: left;  
+	clear: both;
+	width: 80%;
+	margin: 10%;}
+
+.n5 img{float: left;  
+	clear: both;width: 80%;
+	margin: 10%;}
+
+.n6 img{float: left;  
+	clear: both;width: 80%;
+	margin: 10%;}
+
 }
-
-}
-
 	</style>
+
 </head>
+
 <body>
+
 	<nav class="navbar">
 
 		<div class="hamburger">
@@ -228,30 +281,35 @@ span {margin-top: 100px;}
 			<li><a href="news.html">뉴스</a></li>
 		</ul>
 	</nav>
-	<footer>
-		<div>
-<span><img src="01.png"></span>
-	<img src="02.png">
-	<img src="03.png">
-	<img src="04.png">
-	<img src="05.png">
-	<img src="06.png">
-	<img src="07.png">
-	<img src="08.png">
-	<img src="09.png">
-	<img src="10.png">
-	<img src="11.png">
-	<img src="12.png">
-	<img src="13.png">
-	<img src="14.png">
-	<img src="15.png">
-	<img src="16.png">
-	<img src="17.png">
-	</div>
-	</footer>
+
+<footer>
+
+<div class="new">
+
+<div class="n1">
+	<a href="n1.html"><img src="n1.png"> </a></div>
+
+<div class="n2">
+	<a href="n2.html"><img src="n2.png"></a></div>
+
+<div class="n3">
+	<a href="n3.html"><img src="n3.png"></a></div>
+
+<div class="n4">
+	<a href="n4.html"><img src="n4.png"></a></div>
+
+<div class="n5">
+	<a href="n5.html"><img src="n5.png"></a></div>
+
+<div class="n6">
+	<a href="n6.html"><img src="n6.png"></a></div>
+
+</div>
+
+</footer>
 </body>
 
-<script>
+  <script>
     // JavaScript 코드를 여기에 작성합니다.
 
     // 햄버거 바와 메뉴를 제어하는 함수
@@ -271,6 +329,5 @@ span {margin-top: 100px;}
     var hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click', toggleMenu);
   </script>
-
 
 </html>
