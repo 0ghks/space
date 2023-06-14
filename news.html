@@ -167,7 +167,6 @@ footer {position: fixed;
 
 
 
-
 .n1 img{
 	float: left; 
 	width: 13%;
@@ -192,11 +191,26 @@ margin: 2%;}
 .n6 img{float: left;  width: 13%;
 	margin: 2%;}
 
+
+
+
+
+	a img:hover{width: 15%;
+	margin: 1%;}
+
+
+	
+	
+  
+
+
+
+
+
 @media screen and (max-width:768px){
 
 	body{background-image: url(66.png);
-	    background-attachment: fixed;
-    background-position: top center;
+
 	}
 
 	.menu {text-align: center;
@@ -237,6 +251,9 @@ footer{position:static;
 	margin-top: 25%;
 padding-left: 1%;}
 
+.new{margin: 0px;
+padding: 0px;}
+
 .n1 img{
 	float: left; 
 	width: 80%;
@@ -264,6 +281,12 @@ margin: 10%;}
 .n6 img{float: left;  
 	clear: both;width: 80%;
 	margin: 10%;}
+
+	a img:hover{width: 80%;
+	margin: 10%;}
+
+
+
 
 }
 	</style>
@@ -314,6 +337,8 @@ margin: 10%;}
 </div>
 
 </footer>
+
+
 </body>
 
   <script>
@@ -335,6 +360,10 @@ margin: 10%;}
     // 햄버거 바 클릭 이벤트 리스너 등록
     var hamburger = document.querySelector('.hamburger');
     hamburger.addEventListener('click', toggleMenu);
+  </script>
+
+  <script>
+	
   </script>
 
 </html>
