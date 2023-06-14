@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+	<style>
+@font-face {
+			font-family: '이탈리';
+			src: url('italicc_.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+
+				@font-face {
+			font-family: 'ISOCT1';
+			src: url('isoct___.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'ISOCT2';
+			src: url('isoct_IV25.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'ISOCT3';
+			src: url('isoct_IV50.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+						@font-face {
+			font-family: '더잠실1';
+			src: url('The Jamsil 1 Thin.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: '더잠실2';
+			src: url('The Jamsil 2 Light.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: '더잠실3';
+			src: url('The Jamsil 3 Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: '더잠실4';
+			src: url('The Jamsil 4 Medium.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: '더잠실5';
+			src: url('The Jamsil 5 Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: '더잠실6';
+			src: url('The Jamsil 6 ExtraBold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		*{margin: 0;
+		padding: 0;}
+
+body{color:#dcdcef;
+			background-attachment: fixed;
+			background-image: url(55.png);
+		     background-repeat: no-repeat;
+			background-size: cover;
+		    height: 100vh;}
+
+.head{
+position: fixed;
+width: 100%;}
+
+			h1{ /* 메뉴바를 고정시키기 위해 position 속성을 fixed로 설정 */
+
+		margin-top: 10px;
+		margin-left: 20px;
+	float: left;
+				display: inline;
+				font-family: ISOCT1;
+				display: inline;
+				font-size: 2em;
+
+				}
+
+            h1 a:hover{color:#5b5b89}
+
+			li{
+				display: inline-block;
+				list-style-type: none;
+				padding: 0px 45px;
+			font-family: 더잠실2;
+			font-size: 1.1em;
+			font-weight: normal;
+
+		
+		}
+		
+		li a:hover {
+			color: #5b5b89;     
+
+		}
+		
+		a { 
+			text-decoration: none; 
+			color: #dcdcef;
+		}
+			
+		.menu {width: 567px;
+  display: inline;
+
+  margin-top: 20px;
+float: right;
+  margin-right: 20px;
+  /* 기본적인 네비게이션 바 스타일 */
+
+
+
+  z-index: 2; /* 원래 화면 위에 위치시킴 */
+}
+
+
+
+
+
+.hamburger {
+  display: none; /* 기본적으로 숨김 */
+  /* 햄버거 바 아이콘 스타일 */
+}
+
+.hamburger img {
+  width: 20px; /* 원하는 크기로 조정 */
+  height: auto; /* 가로 세로 비율 유지 */
+}
+
+.maback{display: none;}
+
+.aback img{width: 70%; 
+	margin-top: 10%;
+	float: left;
+	margin-left: 12%;
+}
+
+
+footer{width: 100%;
+	bottom: 0px;
+	margin-bottom: 3%;
+margin-top: 12%;
+	height: 50px;
+	float: left;
+
+}
+
+.xb img{width: 1%;
+
+	margin-left: 5%;
+	float: left;}
+
+.sunt img{width: 5%;
+
+	margin-left: 41%;
+	float: left;}
+
+
+	
+.xf img{width: 1%;
+
+
+	margin-left: 93%;
+clear: both;
+	float: left;}
+
+
+@media screen and (max-width:768px){
+
+	
+	body{background-image: url(66.png);}
+
+	.menu {text-align: center;
+		background-color:rgba(91, 91, 137, 0.5);
+		
+    display: none; /* 작은 화면에서는 메뉴 아이템 숨김 */
+    width: 70%; /* 메뉴 너비 조정 */
+  }
+
+  .hamburger {
+    display: block; /* 작은 화면에서 햄버거 바 아이콘 보임 */
+    position: fixed;
+    top: 10px; /* 원하는 위치로 조정 */
+    right: 10px; /* 원하는 위치로 조정 */
+    cursor: pointer; /* 클릭 가능한 커서 스타일 */
+	z-index: 999; /* Update the z-index value to a higher number */
+  }
+
+  .menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  position: absolute; /* Add this line */
+  top: 100%; /* Add this line */
+}
+
+
+
+
+
+
+.menu li {
+  display: block;
+  padding: 10px 20px; /* 좀 더 작은 패딩 값으로 조정 */
+}
+
+.aback{display: none;}
+
+.maback{display: block;
+	float: left;
+	margin-top: 30%;
+margin-left: 30%;
+}
+
+.maback img{width: 60%;}
+
+.xb img{width: 3%;
+}
+
+.sunt img{width: 15%;
+	margin-left: 34%;
+}
+
+.xf img{width: 3%;
+}
+
+}
+
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+
+		<div class="hamburger">
+<img src="ham.png">
+</div>
+
+<div class="head">
+	<h1><a href="index.html">COSMOS</a></h1> 
+		<ul class="menu">
+
+			<li><a href="about.html">소개</a></li> 
+			<li><a href="planets.html">플래닛</a></li>
+			<li><a href="gallery.html">갤러리</a></li>
+			<li><a href="news.html">뉴스</a></li>
+		</ul>
+	</nav>
+
+<div class="aback">
+	<img src="iback.png">
+</div>
+
+<div class="maback">
+	<img src="miback.png">
+</div>
+
+
+	<footer>
+
+<div class="xb"><a href="h.html"><img src="xb.png"></a></div>
+
+<div class="sunt"><img src="it.png"></div>
+
+<div class="xf"><a href="a.html"><img src="xf.png"></a></div>
+
+	</footer>
+
+</body>
+
+<script>
+    // JavaScript 코드를 여기에 작성합니다.
+
+    // 햄버거 바와 메뉴를 제어하는 함수
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      var hamburger = document.querySelector('.hamburger');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+        hamburger.classList.remove('active');
+      } else {
+        menu.style.display = 'block';
+        hamburger.classList.add('active');
+      }
+    }
+
+    // 햄버거 바 클릭 이벤트 리스너 등록
+    var hamburger = document.querySelector('.hamburger');
+    hamburger.addEventListener('click', toggleMenu);
+  </script>
+
+
+</html>
